@@ -27,7 +27,32 @@ class _HomeState extends State<Home> {
         ],
       ),
       backgroundColor: Colors.white,
-      body: Column(),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          Icon(
+            Icons.person_outline,
+            size: 120,
+            color: Colors.deepPurple,
+          ),
+          TextField(
+            keyboardType: TextInputType.number,
+            decoration: InputDecoration(
+                labelText: "peso(kg)",
+                labelStyle: TextStyle(color: Colors.deepPurple)),
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.deepPurple, fontSize: 25),
+          ),
+          TextField(
+            keyboardType: TextInputType.number,
+            decoration: InputDecoration(
+                labelText: "Altura(cm)",
+                labelStyle: TextStyle(color: Colors.deepPurple)),
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.deepPurple, fontSize: 25),
+          )
+        ],
+      ),
     );
   }
 }
